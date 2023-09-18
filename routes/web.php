@@ -17,7 +17,7 @@ use Symfony\Component\DomCrawler\Crawler;
 
 Route::get('/', function () {
 
-    $url = route('demo');
+    $url = 'https://crawl.flagteam.vn/view/b4f917e6-0743-419b-b9ad-bf37d185f403-1692133801.html';
     $client = new Client();
     $data = array();
     $crawler = $client->request('GET', $url);
